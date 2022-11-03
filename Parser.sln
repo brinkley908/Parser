@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33027.239
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Parser", "Parser\Parser.shproj", "{E6DFF66E-4027-41B7-9DED-C2442A0F077D}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B52967BD-9950-437F-B9DF-9A0B0D6D1C0E}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Parser\Parser.projitems*{e6dff66e-4027-41b7-9ded-c2442a0f077d}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>e6dff66e-4027-41b7-9ded-c2442a0f077d</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Parser</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\JsonExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ParserExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Command.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\enCommandType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\enDateAdd.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\enTokenState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\enTokenType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\enums.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ExtensionMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\FuncItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Identifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ParserException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\SyntaxError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\VarType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\FileIOService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\IFileIOService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\IParserService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserBlock.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserEvaluation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserExtensionsDateTime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserFunctions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserFunctionsDateTime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserFunctionsMath.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserImport.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Service\ParserVariables.cs" />
+  </ItemGroup>
+</Project>
